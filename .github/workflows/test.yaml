@@ -1,0 +1,24 @@
+name: First Action Workflow
+
+on:
+  push:
+    branches:
+      - master
+  Workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: first echo
+        run: echo "Hello World!"
+        shell: bash
+  
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: second echo
+        run: echo "Goodbye World!"
+        shell: bash
+
