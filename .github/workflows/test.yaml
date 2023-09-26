@@ -3,7 +3,7 @@ name: First Action Workflow
 on:
   push:
     branches:
-      - master
+      - main
   Workflow_dispatch:
 
 jobs:
