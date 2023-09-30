@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  web:
+    container_name: web-${BRANCH_NAME}
+    build:
+      context: ../../init
+      dockerfile: docker/DockerFile
+    ports:
+    - '3030:3030'
+    volumes:
+    - '..:/app'
