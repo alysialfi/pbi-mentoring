@@ -1,6 +1,7 @@
 name: First Action Workflow
 
-on: [push]
+on:
+  push:
   Workflow_dispatch:
 
 jobs:
