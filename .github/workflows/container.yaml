@@ -15,4 +15,4 @@ jobs:
       - name: Setup Docker Compose
         env:
           BRANCH_NAME: ${GITHUB_REF##*/}
-        run: docker-compose -f ~/docker/docker-compose.yaml up --build
+        run: docker-compose -f docker/docker-compose.yaml up --build
