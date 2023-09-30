@@ -1,9 +1,7 @@
 name: First Action Workflow
 
 on:
-  push:
-    branches:
-      - main
+  "push"
   Workflow_dispatch:
 
 jobs:
@@ -15,10 +13,10 @@ jobs:
         run: echo "Hello World!"
         shell: bash
   
-  goodbye:
+  branchName:
     runs-on: ubuntu-latest
     steps:
-      - name: second echo
-        run: echo "Goodbye World!"
+      - name: get current branch on chceckout
+        run: echo ${GITHUB_REF##*/}
         shell: bash
 
