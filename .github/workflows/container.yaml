@@ -19,7 +19,7 @@ jobs:
       - uses: isbang/compose-action@v1.5.1
         name: Setup docker compose up
         with:
-          compose-file: "../../init/docker/docker-compose.yaml"
+          compose-file: "./../../init/docker/docker-compose.yaml"
           up-flags: "--build"
         env:
           BRANCH_NAME: ${GITHUB_REF##*/}
