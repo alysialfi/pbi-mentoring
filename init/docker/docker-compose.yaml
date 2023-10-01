@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   web:
-    container_name: web-test
+    container_name: web-${BRANCH_NAME}
     build:
       context: ..
       dockerfile: docker/DockerFile
