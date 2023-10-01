@@ -25,5 +25,4 @@ jobs:
       #     BRANCH_NAME: ${GITHUB_REF##*/}
       - name: Setup docker compose up
         run: |
-          cd ../../init/docker/
           ls
